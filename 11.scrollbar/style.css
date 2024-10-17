@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.scroll-container {
+  background: #001f3f;
+  width: 25rem;
+  padding: 30px;
+  border-radius: 40px;
+}
+
+.scroll-div {
+  width: 400px;
+  height: 500px;
+  background: #001f3f;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-object {
+  padding: 20px;
+}
+
+.scroll-div::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-div::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+}
