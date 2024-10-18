@@ -1,0 +1,33 @@
+body {
+  background-color: #131842;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s cubic-bezier(0.21, 0.61, 0.35, 1);
+}
+
+h2 {
+  color: #fff;
+  font-weight: 200px;
+}
+
+button {
+  padding: 12px 24px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: 0.8s cubic-bezier(0.17, 0.88, 0.32, 1.27);
+  border-radius: 24px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+button:active {
+  padding: 6px 12px;
+}
