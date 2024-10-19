@@ -1,0 +1,59 @@
+:root {
+  --primary-color: #f6f6f6;
+  --secondary-color: #212121;
+  --primary-label: #212121;
+  --secondary-label: #f6f6f6;
+  --white-ball: #f6f6f6;
+  --black-ball: #212121;
+}
+
+body {
+  background: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#switch {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background: var(--primary-label);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+label::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 70px;
+  background: var(--white-ball);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.5s;
+}
+
+#switch:checked + label::after {
+  background: var(--black-ball);
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+#switch:checked + label {
+  background: var(--secondary-label);
+}
+
+label:active:after {
+  width: 60px;
+}
