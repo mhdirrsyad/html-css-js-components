@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Trailer Popup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="image-container">
+      <div class="content">
+        <h1>KIRIKO</h1>
+        <p>
+          As Miko of the Kanezaka shrine and daughter of the Shimada's former
+          swordmaster, Kiriko Kamori channels both her spiritual and ninja
+          skills to heal her fractured city.
+        </p>
+      </div>
+      <img src="./assets/circle-play-solid.svg" class="btn-play" />
+    </div>
+
+    <div class="trailer-container active">
+      <iframe
+        src="https://www.youtube.com/embed/LLsJaMzLltE?si=EUh64MmUofWQkqER"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <img src="./assets/xmark-solid.svg" class="btn-close" />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
