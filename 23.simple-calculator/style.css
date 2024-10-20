@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0093e9 0%, #80d0c7 100%);
+  font-family: sans-serif;
+}
+
+.main {
+  padding: 20px 16px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  font-size: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 8px;
+  outline: none;
+}
+
+#selectOp {
+  width: 60px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 8px;
+  outline: none;
+}
+
+.result {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 12px;
+  font-size: 2rem;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+#submitBtn,
+#resetBtn {
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#submitBtn {
+  background: #0d9276;
+}
+
+#resetBtn {
+  background: #ef5a6f;
+}
