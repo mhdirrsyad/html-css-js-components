@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f8;
+}
+
+/* menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(45deg, #0093e9 0%, #80d0c7 100%);
+  clip-path: circle(20px at calc(100vw - 4vw) 32px);
+  transition: clip-path 0.5s;
+}
+
+.menu li {
+  position: relative;
+  z-index: 5;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #f7f7f8;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px;
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  left: calc(100vw - 4vw);
+  transform: translateX(-50%);
+  cursor: pointer;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn > span {
+  width: 5px;
+  height: 5px;
+  display: block;
+  border: 2px solid #f7f7f8;
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  background-color: #80d0c7;
+  transition: transform 0.3s;
+}
+
+/* img container */
+.image-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 360px;
+  height: 360px;
+  margin: 20px;
+  border-radius: 16px;
+}
+
+.img-one {
+  background: url("./img/silas-baisch-PvBECXDZw84-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-two {
+  background: url("./img/majid-azim-qUMZwK2PSZo-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* content */
+.container {
+  padding: 0 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+article h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  background-image: linear-gradient(65deg, #0093e9 0%, #80d0c7 60%);
+  background-clip: text;
+  color: transparent;
+}
+
+.paragraf {
+  max-width: 900px;
+  font-size: 1.2rem;
+  padding: 32px 16px;
+  text-align: center;
+  line-height: 24px;
+}
