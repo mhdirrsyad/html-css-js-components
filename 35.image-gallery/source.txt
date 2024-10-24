@@ -15,3 +15,6 @@ https://unsplash.com/photos/person-riding-on-white-and-red-surfboard-on-body-of-
 
 6. Image : Unsplash - Michael Browk
 https://unsplash.com/photos/green-and-brown-rock-formation-beside-blue-sea-under-blue-and-white-cloudy-sky-during-daytime-WBXvxc8QTRo
+
+7. Icon : Font Awesome
+https://fontawesome.com/icons/x?f=classic&s=solid
