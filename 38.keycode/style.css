@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background-color: #3795bd;
+}
+
+#insert {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.key {
+  border: 2px dashed rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: inline-flex;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 20px;
+  flex-direction: column;
+  min-width: 140px;
+  border-radius: 6px;
+  color: #3a1078;
+  margin: 0 12px;
+}
+
+/* javascript */
+.key small {
+  position: absolute;
+  top: -26px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+}
