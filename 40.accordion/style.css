@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #00224d;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 24px;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 12px 32px;
+  border-radius: 12px;
+  height: 60%;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #00224d;
+  margin-bottom: 24px;
+}
+
+.accordion-item {
+  width: 100%;
+}
+
+.accordion-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 52px;
+}
+
+.accordion-item-title {
+  color: #00224d;
+  font-size: 1.12rem;
+  font-weight: 400;
+}
+
+.accordion-item-body {
+  max-height: 0;
+  padding-top: 8px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-item-body-content {
+  width: 90%;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 2px solid #00224d;
+  color: #00224d;
+  width: 32px;
+  height: 32px;
+  transition: color 0.2s;
+  position: relative;
+  border-radius: 50%;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background-color: #00224d;
+  border-radius: 20px;
+  pointer-events: all;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background-color: #00224d;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* javascript */
+.accordion-item-header.active > .icon::before {
+  transform: rotate(180deg);
+}
+
+.accordion-item-header.active > .icon::after {
+  transform: rotate(90deg);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 8px 0 8px 0;
+  background-color: #00224d;
+}
