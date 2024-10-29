@@ -1,0 +1,2 @@
+API :
+https://dummyjson.com/docs/quotes
