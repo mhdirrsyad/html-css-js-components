@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222831;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.panel-container {
+  background-color: #393e46;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.panel-container h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.rating {
+  flex: 1;
+  cursor: pointer;
+  padding: 24px;
+}
+
+.rating i {
+  font-size: 6rem;
+  color: #fff;
+}
+
+.rating i:hover {
+  color: #ffd700;
+  transition: 0.3s ease-out;
+}
+
+.rating.active i {
+  color: #ffd700;
+}
+
+.rating p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #222831;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* javascript */
+.heart {
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.thanks-msg {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heart > p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+}
