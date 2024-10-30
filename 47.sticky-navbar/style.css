@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #4a4947;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  background-color: #461111;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav .logo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav .logo a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.nav .logo .logo-icon {
+  font-size: 1.4rem;
+  color: #f0f0f0;
+}
+
+.nav ul a {
+  color: #f0f0f0;
+  font-size: 1.12rem;
+  text-decoration: none;
+  padding: 8px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* javascript navbar */
+.nav.active {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+}
+
+.nav.active a {
+  color: #461111;
+}
+
+.nav.active .logo,
+.nav.active .logo-icon {
+  color: #461111;
+}
+/* ================= */
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.unsplash.com/photo-1660299478239-a6ca80b37e0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  max-width: 700px;
+  line-height: 28px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #faf7f0;
+}
+
+.content {
+  max-width: 600px;
+  margin: 20px;
+  background-color: #461111;
+  color: #f0f0f0;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 24px;
+}
