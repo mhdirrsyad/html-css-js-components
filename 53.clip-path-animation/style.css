@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/bryan-goff-f7YQo-eYHdM-unsplash.jpg) no-repeat center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(img/bryan-goff-f7YQo-eYHdM-unsplash.jpg) no-repeat center;
+  background-size: 5000px;
+  clip-path: circle(140px at var(--1) var(--2));
+}
