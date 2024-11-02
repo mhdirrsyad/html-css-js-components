@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-side {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.8s ease-in-out;
+}
+
+.left-side > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #1e201e;
+}
+
+.left-side h1 {
+  font-size: 4rem;
+}
+
+.right-side {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 60%;
+  transition: transform 0.8s ease-in-out;
+  background-color: #3c3d37;
+}
+
+.right-side div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-one {
+  background: url(https://images.unsplash.com/photo-1671372483275-afb37e41be65?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.img-two {
+  background: url(https://images.unsplash.com/photo-1578894449933-15bf7f9aac99?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.img-three {
+  background: url(https://images.unsplash.com/photo-1718094985270-4978824bff3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.img-four {
+  background: url(https://images.unsplash.com/photo-1718967917204-b359a7b6a742?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.buttons-container button {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 2.4rem;
+  padding: 12px;
+  background-color: transparent;
+  color: #fff;
+}
+
+#down-btn {
+  transform: translateX(-100%);
+}
+#up-btn {
+  transform: translateY(-100%);
+}
