@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.card {
+  background-color: #f5f5f5;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 52px;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 0 black;
+  background-color: #ede2ce;
+  border: 1px solid black;
+}
+
+.card i {
+  font-size: 3.5rem;
+}
+
+.followers {
+  font-size: 4.2rem;
+}
+
+.card span {
+  font-size: 1.12rem;
+}
