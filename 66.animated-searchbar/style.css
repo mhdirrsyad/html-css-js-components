@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #14151f;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background-color: #1c202a;
+  padding: 12px;
+  width: 400px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+
+.input {
+  width: 100%;
+  margin: 0 40px;
+  font-size: 1.2rem;
+  color: #b5b5b9;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  transition-delay: 0.5s;
+}
+
+.input::placeholder {
+  color: #434754;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  color: #7b8390;
+  width: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.fa-microphone {
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  color: #7b8390;
+  width: 24px;
+  transition: width 0.5s;
+  transition-delay: 0.3s;
+}
+
+/* javascript */
+.container.active {
+  width: 52px;
+  display: flex;
+}
+
+.active .input {
+  width: 0;
+}
+
+.active .fa-microphone {
+  width: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
