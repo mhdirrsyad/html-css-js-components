@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 80%;
+  background-color: #222831;
+  padding: 36px 40px;
+  width: 400px;
+  border-radius: 8px;
+}
+
+.wrapper h1 {
+  color: #eeeeee;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.wrapper .captcha-area {
+  display: flex;
+  margin: 32px 0 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.captcha-area .captcha-container {
+  padding: 32px;
+  width: 100%;
+  user-select: none;
+  background-color: #dddddd;
+  position: relative;
+  border-radius: 4px;
+}
+
+.captcha-container .captcha {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #229799;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 100%;
+  letter-spacing: 12px;
+}
+
+.captcha-area .reload-btn {
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 1.3rem;
+  transform: translateY(-50%);
+  background-color: #dddddd;
+  cursor: pointer;
+  height: 80%;
+  padding: 0 12px;
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.captcha-area i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.captcha-area .reload-btn:hover i {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper .input-area {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+
+.input-area input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px 8px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.input-area .check-btn {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #dddddd;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 12px 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-area input:valid + .check-btn {
+  pointer-events: auto;
+  background-color: #229799;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrapper .status-text {
+  display: none;
+  font-size: 1rem;
+  margin: 12px 0 0 0;
+}
