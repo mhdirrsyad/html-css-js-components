@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabbed Navigation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tadded-container">
+      <div class="container">
+        <div class="menu-links">
+          <div class="menu-logo">
+            <h3>KyotoTrip</h3>
+          </div>
+          <ul>
+            <li class="active">Home</li>
+            <li>Culture</li>
+            <li>Trip</li>
+          </ul>
+
+          <button class="menu">
+            <i class="fa-solid fa-times"></i>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="sections">
+          <section class="home-section visible" data-section="Home">
+            <img
+              src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="home-content">
+              <h2>
+                Discover Kyoto: Japan's Timeless City of Tradition and Beauty
+              </h2>
+              <p>
+                Kyoto is a city where Japan's rich traditions and stunning
+                beauty come to life.
+              </p>
+            </div>
+          </section>
+
+          <section class="culture-section" data-section="Culture">
+            <img
+              src="https://images.unsplash.com/photo-1706984790819-0638f894a4dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="culture-content">
+              <h2>
+                Kyoto’s Cultural Heritage: A Journey into Tradition and Art
+              </h2>
+              <a href="#">
+                <h4>Tea Ceremony (Sado)</h4>
+              </a>
+              <a href="#">
+                <h4>Ikebana (Flower Arrangement)</h4>
+              </a>
+              <a href="#">
+                <h4>Geisha and Maiko Culture</h4>
+              </a>
+              <a href="#">
+                <h4>Kyoto Cuisine (Kyo-ryori)</h4>
+              </a>
+              <a href="#">
+                <h4>Zen Buddhism</h4>
+              </a>
+              <a href="#">
+                <h4>Kyo Yuzen (Kyoto-Style Dyeing)</h4>
+              </a>
+            </div>
+          </section>
+
+          <section class="trip-section" data-section="Trip">
+            <img
+              src="https://images.unsplash.com/photo-1545299453-96e849f1697b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="trip-content">
+              <h2>
+                Kyoto Trip Planner: Explore Temples, Gardens, and Hidden Gems
+              </h2>
+              <a href="#">
+                <h4>Kinkaku-ji (Golden Pavilion)</h4>
+              </a>
+              <a href="#">
+                <h4>Fushimi Inari Shrine</h4>
+              </a>
+              <a href="#">
+                <h4>Arashiyama Bamboo Grove</h4>
+              </a>
+              <a href="#">
+                <h4>Gion District</h4>
+              </a>
+              <a href="#">
+                <h4>Kiyomizu-dera Temple</h4>
+              </a>
+              <a href="#">
+                <h4>Nijo Castle</h4>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
