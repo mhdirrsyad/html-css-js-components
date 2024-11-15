@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #1e0126;
+}
+
+.container {
+  width: 25rem;
+  padding: 2rem;
+}
+
+input {
+  width: 100%;
+  display: block;
+  background-color: #3c2040;
+  color: #f2e7dc;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: #8c7785;
+}
+
+.output {
+  margin-top: 1.5rem;
+}
+
+/* javascript */
+.todo {
+  border-left: 8px solid #f2e7dc;
+  color: #f2e7dc;
+  background-color: #350d40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+
+.delete {
+  color: #f2e7dc;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.message {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  color: #f2e7dc;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  visibility: hidden;
+  transition: transform 1s ease;
+}
+
+.success {
+  transform: translateY(1.5rem);
+  visibility: visible;
+  background-color: #16423c;
+}
+
+.error {
+  transform: translateY(1.5rem);
+  visibility: visible;
+  background-color: #821131;
+}
+
+/* breakpoints */
+@media (min-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1240px) {
+  html {
+    font-size: 24px;
+  }
+}
