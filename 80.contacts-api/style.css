@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --on-primary: #ffffff;
+  --on-primary-variant: #fafafa;
+  --on-secondary: #212121;
+  --on-secondary-variant: #424242;
+}
+
+body {
+  background-color: var(--on-primary);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 20px;
+  max-width: 28rem;
+  width: 100%;
+  margin: 0 0.75rem;
+  border-radius: 0.75rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  border-radius: 0.75rem 0.75rem 0 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--on-primary-variant);
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--on-secondary);
+}
+
+#search {
+  width: 100%;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  border: 0;
+  outline: none;
+  border-radius: 1.25rem;
+}
+
+.user-list {
+  background-color: var(--on-primary-variant);
+  list-style-type: none;
+  max-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.75rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+  color: var(--on-secondary-variant);
+  overflow-y: auto;
+}
+
+/* javascript */
+.user-list .user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-list li {
+  padding: 0.75rem 0;
+}
+
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid rgba(149, 157, 165, 0.2);
+}
+
+.user-list li.hide {
+  display: none;
+}
+
+.user-info .user-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.user-info .user-detail img {
+  width: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.user-info .user-phone h4 {
+  font-size: 1rem;
+}
+
+.user-detail .user-name h5 {
+  font-size: 1rem;
+}
+
+.user-detail .user-name p {
+  font-size: 0.75rem;
+}
+
+/* toggle */
+.toggle-container {
+  position: absolute;
+  top: -0.75rem;
+  right: 0.75rem;
+}
+
+#toggle {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  width: 2.8rem;
+  height: 1.5rem;
+  background-color: var(--on-secondary-variant);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+label::after {
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  background-color: var(--on-primary-variant);
+  transition: 0.5s;
+}
+
+#toggle:checked + label::after {
+  background-color: var(--on-secondary-variant);
+  left: calc(100% - 0.15rem);
+  transform: translateX(-100%);
+}
+
+#toggle:checked + label {
+  background-color: var(--on-primary-variant);
+}
+
+label:active::after {
+  width: 1.4rem;
+}
+
+/* breakpoints */
+@media (min-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+
+  .user-list {
+    max-height: 20rem;
+  }
+}
+
+@media (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1240px) {
+  html {
+    font-size: 24px;
+  }
+}
